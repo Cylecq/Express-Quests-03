@@ -3,7 +3,7 @@
 ### Initialisation
 
 1. Clone the repo
-2. `cd Express-Quests`
+2. `cd Express-Quests-03`
 3. `npm i`
 4. `cp .env.sample .env`
 5. `npm run dev`
@@ -12,8 +12,18 @@
 
 ### To validate the quest
 
-_In your favorite browser or in Postman_
+_In Postman_
 
-1. `localhost:5005/api/users/` -> displays the user list in a json format
-2. `localhost:5005/api/users/2` -> displays one user in a json format
-3. `localhost:5005/api/users/0` -> displays "Not found"
+1. In body section, create a user. Don't bother, i've created a template for you. Just copy/paste it and replace values :
+
+```
+{
+ "firstname":"Michel",
+ "lastname" :"Michelle",
+ "email":"michel.michelle@michel.michelle",
+ "city": "Micheltown",
+ "language": "French"
+}
+```
+
+2. Do a POST request `localhost:5005/api/users/` -> You should have created a user !
